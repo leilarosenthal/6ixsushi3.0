@@ -1,0 +1,12 @@
+<!-- ****** Welcome Post Area Start ****** -->
+<section class="welcome-post-sliders owl-carousel">
+
+  <% page.posts.each(function(post, i){ %>
+    <% if (post.show_on_homepage){ %>
+      <%- partial('feature', {post: post}) %>
+    <% } %>
+  <% }) %>
+
+
+</section>
+<!-- ****** Welcome Area End ****** -->

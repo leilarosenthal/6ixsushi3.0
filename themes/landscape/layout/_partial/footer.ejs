@@ -1,11 +1,12 @@
-<footer id="footer">
-  <% if (theme.sidebar === 'bottom'){ %>
-    <%- partial('_partial/sidebar') %>
-  <% } %>
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
-      <%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
+<footer>
+  <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Copywrite Text -->
+                <div class="copy_right_text text-center">
+                    <p>Copyright @<%= date(new Date(), 'YYYY') %> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </footer>
